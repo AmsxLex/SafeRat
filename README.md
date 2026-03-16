@@ -1,3 +1,5 @@
+![tt](https://github.com/AmsxLex/SafeRat/raw/master/1.png)
+
 远程控制
 实现功能
 远程CMD
@@ -11,4 +13,4 @@
 采用VS2010开发。
 
 关于
-去年用过一次 ， 火绒 360 金山 defender  腾讯管家 都没问题。
+ 火绒 360 金山 defender  腾讯管家 都没问题。
