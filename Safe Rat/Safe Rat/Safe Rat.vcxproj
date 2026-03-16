@@ -1,0 +1,353 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{3B3BBCD3-FA1E-4E16-9137-569C8FFA9443}</ProjectGuid>
+    <Keyword>MFCProj</Keyword>
+    <RootNamespace>SafeRat</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Safe Rat</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v100</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v100</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v100</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v100</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalOptions>/Zm200 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>../xtp/Source;../hp/Include/HPSocket;../hp/Dependent/zlib/14x/x64/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/Zm200 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalLibraryDirectories>../xtp/Lib/vc150x64;../hp/Lib/HPSocket/x64/static;../hp/Dependent/zlib/14x/x64/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);../xtp/Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>../xtp/Source;../hp/Include/HPSocket;../hp/Dependent/zlib/14x/x64/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>../xtp/Lib/vc150x64;../hp/Lib/HPSocket/x64/static;../hp/Dependent/zlib/14x/x64/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);../xtp/Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\common\CursorInfo.h" />
+    <ClInclude Include="..\..\common\macros.h" />
+    <ClInclude Include="Audio.h" />
+    <ClInclude Include="AudioRender.h" />
+    <ClInclude Include="Buffer.h" />
+    <ClInclude Include="CConfig.h" />
+    <ClInclude Include="CEditGropuDlg.h" />
+    <ClInclude Include="CFileManagerDlg.h" />
+    <ClInclude Include="CFileTransferModeDlg.h" />
+    <ClInclude Include="CGenerate.h" />
+    <ClInclude Include="CHideScreenDlg.h" />
+    <ClInclude Include="CHostDlg.h" />
+    <ClInclude Include="CInputDlg.h" />
+    <ClInclude Include="CKeyBoard.h" />
+    <ClInclude Include="ClipboardDlg.h" />
+    <ClInclude Include="CMikeDlg.h" />
+    <ClInclude Include="ColumnTreeCtrl.h" />
+    <ClInclude Include="CReg.h" />
+    <ClInclude Include="CRegText.h" />
+    <ClInclude Include="CScreenDlg.h" />
+    <ClInclude Include="CServerDlg.h" />
+    <ClInclude Include="CServerInfoDlg.h" />
+    <ClInclude Include="CShellDlg.h" />
+    <ClInclude Include="CSpeakerDlg.h" />
+    <ClInclude Include="C_Akagi64.h" />
+    <ClInclude Include="framework.h" />
+    <ClInclude Include="HpTcpServer.h" />
+    <ClInclude Include="IniFile.h" />
+    <ClInclude Include="LogView.h" />
+    <ClInclude Include="Mytypedef.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="PluginsDlg.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="Safe Rat.h" />
+    <ClInclude Include="Safe RatDlg.h" />
+    <ClInclude Include="SEU_QQwry.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Sunlogin.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="XvidQuickDec.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Audio.cpp" />
+    <ClCompile Include="AudioRender.cpp" />
+    <ClCompile Include="Buffer.cpp" />
+    <ClCompile Include="CConfig.cpp" />
+    <ClCompile Include="CEditGropuDlg.cpp" />
+    <ClCompile Include="CFileManagerDlg.cpp" />
+    <ClCompile Include="CFileTransferModeDlg.cpp" />
+    <ClCompile Include="CGenerate.cpp" />
+    <ClCompile Include="CHideScreenDlg.cpp" />
+    <ClCompile Include="CHostDlg.cpp" />
+    <ClCompile Include="CInputDlg.cpp" />
+    <ClCompile Include="CKeyBoard.cpp" />
+    <ClCompile Include="ClipboardDlg.cpp" />
+    <ClCompile Include="CMikeDlg.cpp" />
+    <ClCompile Include="ColumnTreeCtrl.cpp" />
+    <ClCompile Include="CReg.cpp" />
+    <ClCompile Include="CRegText.cpp" />
+    <ClCompile Include="CScreenDlg.cpp" />
+    <ClCompile Include="CServerDlg.cpp" />
+    <ClCompile Include="CServerInfoDlg.cpp" />
+    <ClCompile Include="CShellDlg.cpp" />
+    <ClCompile Include="CSpeakerDlg.cpp" />
+    <ClCompile Include="HpTcpServer.cpp" />
+    <ClCompile Include="IniFile.cpp" />
+    <ClCompile Include="LogView.cpp" />
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="PluginsDlg.cpp" />
+    <ClCompile Include="Safe Rat.cpp" />
+    <ClCompile Include="Safe RatDlg.cpp" />
+    <ClCompile Include="SEU_QQwry.cpp" />
+    <ClCompile Include="XvidQuickDec.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="SafeRat.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\dot.cur" />
+    <None Include="res\Edge.ico" />
+    <None Include="res\Proxy.ico" />
+    <None Include="res\SafeRat.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\Audio.ico" />
+    <Image Include="res\bmp00001.bmp" />
+    <Image Include="res\build.ico" />
+    <Image Include="res\cmd.ico" />
+    <Image Include="res\FileToolBarDisable.bmp" />
+    <Image Include="res\FileToolBarHot.bmp" />
+    <Image Include="res\HOSTLISTICO\CPU.ico" />
+    <Image Include="res\HOSTLISTICO\MAC.ico" />
+    <Image Include="res\HOSTLISTICO\OS.ico" />
+    <Image Include="res\HOSTLISTICO\tk.ico" />
+    <Image Include="res\HOSTLISTICO\其他\启动.ico" />
+    <Image Include="res\HOSTLISTICO\其他\四窗口.ico" />
+    <Image Include="res\HOSTLISTICO\其他\常用软件.ico" />
+    <Image Include="res\HOSTLISTICO\其他\浏览器.ico" />
+    <Image Include="res\HOSTLISTICO\其他\用户.ico" />
+    <Image Include="res\HOSTLISTICO\其他\网络.ico" />
+    <Image Include="res\HOSTLISTICO\其他\进程管理.ico" />
+    <Image Include="res\HOSTLISTICO\其他\远程穿透.ico" />
+    <Image Include="res\HOSTLISTICO\内存.ico" />
+    <Image Include="res\HOSTLISTICO\分辨率.ico" />
+    <Image Include="res\HOSTLISTICO\时间.ico" />
+    <Image Include="res\HOSTLISTICO\显卡.ico" />
+    <Image Include="res\HOSTLISTICO\狐狸.ico" />
+    <Image Include="res\HOSTLISTICO\硬盘.ico" />
+    <Image Include="res\HOSTLISTICO\路径.ico" />
+    <Image Include="res\HOSTLISTICO\远程端口.ico" />
+    <Image Include="res\Icon_A.ico" />
+    <Image Include="res\Icon_C.ico" />
+    <Image Include="res\Icon_D.ico" />
+    <Image Include="res\Icon_E.ico" />
+    <Image Include="res\Icon_F.ico" />
+    <Image Include="res\Icon_G.ico" />
+    <Image Include="res\key.ico" />
+    <Image Include="res\keyboard.ico" />
+    <Image Include="res\mic.ico" />
+    <Image Include="res\PASS.ico" />
+    <Image Include="res\reg.ico" />
+    <Image Include="res\regab.ico" />
+    <Image Include="res\regnum.ico" />
+    <Image Include="res\Safe Rat.ico" />
+    <Image Include="res\ScreenSpy.ico" />
+    <Image Include="res\SearchToolBar.bmp" />
+    <Image Include="res\Service.ico" />
+    <Image Include="res\seting.ico" />
+    <Image Include="res\tg.ico" />
+    <Image Include="res\toolbar1.bmp" />
+    <Image Include="res\toolbar2.bmp" />
+    <Image Include="res\toolbar3.bmp" />
+    <Image Include="res\wall.ico" />
+    <Image Include="res\小鸡.ico" />
+    <Image Include="res\文件夹.ico" />
+    <Image Include="res\计算机.ico" />
+    <Image Include="res\计算机.png" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="SafeRat.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
